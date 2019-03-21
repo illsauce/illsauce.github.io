@@ -1,0 +1,49 @@
+@keyframes tableAnimation {
+    0% {background:cyan;}
+    100% {background: green; color:white;}
+    }
+
+@keyframes bannerAnimation {
+    0% {left:0px; top:0px;}
+    100% {left:calc(100% - 400px); top:0px;}
+}
+
+body {background-color:yellow;}
+
+a:link{color:red;}
+
+a:visited{color:blue;}
+
+h1 {color:red; text-align:center;}
+
+p::first-letter {font-size:3em; font-style:italic; font-weight:bold;}
+
+span {color: red;}
+
+h2 {text-align:right; color:blue; font-style:italic;}
+h2:nth-of-type(2) {font-size:3em;}
+
+h3 {text-align:right; color:red;}
+
+table {
+    background-color:green;
+    animation-name: tableAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+
+td:first-child {padding:10px; margin:5px; text-align:center; font-weight:bold;}
+
+#banner {
+    width: 400px;
+    text-align: center;
+    background-color:azure;
+    position: relative;
+    animation-name: bannerAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
