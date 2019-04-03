@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+    Ilario Huober
+    Assignment: Meetup Report
+    Document modified 3/30
+-->
+<html lang="en">
+    <head>
+        <title>Ilario's Meetup Report</title>
+        <meta name="description" content="Assignment for CNIT-132 with general details on the meetup group for Uber Visualization Nights: Visualization and Mapping for Autonomous Vehicles.">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Lora', serif;
+                background-color: chocolate;
+            }
+            #wrapper {
+                background-color: cornsilk;
+                width: 80%;
+                min-width: 850px;
+                margin: auto;
+            }
+            header {
+                background-color: salmon;
+                padding: 10px 10px 10px 10px;
+                text-align: center;
+            }
+            #floatright {
+                margin: 10px;
+                float: right;
+                text-align: center;
+                font-style: italic;
+                font-size: 0.8rem;
+            }
+            article {padding: 0 20px 20px;}
+            figure.gallery {
+                border: 1px solid #ccc;
+                width: 150px;
+                display: inline-block;
+                margin: auto;
+            }
+            figure.gallery:hover {
+                border: 1px solid #777;
+            }
+            figure.gallery img {
+                width: 100%;
+                height: auto;
+            }
+            figure.gallery figcaption {
+                text-align: center;
+                font-style: italic;
+                font-size: 0.8rem;
+                padding-bottom: 5px;
+            }
+            figure.galleryportrait {
+                border: 1px solid #ccc;
+                width: 113px;
+                display: inline-block;
+                margin: auto;
+            }
+            figure.galleryportrait:hover {
+                border: 1px solid #777;
+            }
+            figure.galleryportrait img {
+                width: 100%;
+                height: auto;
+            }
+            figure.galleryportrait figcaption {
+                text-align: center;
+                font-style: italic;
+                font-size: 0.8rem;
+                padding: 0 5px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Visualization and Mapping for Autonomous Vehicles</h1>
+            </header>
+            <main>
+                <article>
+                    <figure id="floatright">
+                        <img src="selfie_300w.jpg" alt="Ilario at the meetup">
+                            <figcaption>I'm happy to be here</figcaption>
+                    </figure>
+                    <h2>Overview</h2>
+                        <p>On Wednesday, March 27, I attended a meetup at Uber headquarters. The event was part of the Uber Visualization Nights series put on by the Engineering org at Uber. At these talks, Uber engineers discuss things they're working on relating to data visualization, and then outside guests are given the opportunity to present their work in the space.</p>
+                        <p>All of the software being discussed is open source and there was a general spirit of cooperation and collaboration at the event. The presenters and their topics were:</p>
+                        <ul>
+                            <li>Uber engineers: AVS.auto</li>
+                            <li>Mapbox product manager: Vision SDK</li>
+                            <li>Cruise engineers: Worldview and Webviz</li>
+                        </ul>
+                        <p>If you are interested in similar meetups, you should look at the <a href="https://www.meetup.com/UberEvents/" target="_blank" rel="noopener">Uber Engineering Events meetup page.</a> You can also learn about more work coming from their team at the <a href="https://eng.uber.com/" target="_blank" rel="noopener">Uber Engineering Blog</a>. The meetings are irregular but generally happen around once a month on average.</p>
+                    <h2>Uber</h2>
+                        <p>The Uber engineers discussed AVS.auto, which is an open standard for autonomous vehicle data visualization. They have built a set of tools that allow for 3D data visualization in a web application.</p>
+                    <h2>Mapbox</h2>
+                        <p>A PM at Mapbox discussed the work that the company does in general with collecting and utilizing mapping data, then gave a brief overview of a new SDK that uses augmented reality to layer that data on top of real-time images using a mobile device.</p>
+                    <h2>Cruise</h2>
+                        <p>Engineers from Cruise, another company working on autonomous vehicles in San Francisco, presented more browser-based applications they have built to allow for AV data visualization. This included some very interesting live coding by one of them.</p>
+                    <section>
+                        <h2>Image Gallery</h2>
+                        <figure class="gallery">
+                            <a href="uber3.JPG" target="_blank" rel="noopener">
+                                <img src="uber3thumb.jpg" alt="Uber demo">
+                            </a>
+                            <figcaption>Uber AVS.auto presentation</figcaption>
+                        </figure>
+                        <figure class="gallery">
+                            <a href="mapbox1.JPG" target="_blank" rel="noopener">
+                                <img src="mapbox1thumb.jpg" alt="Mapbox PM">
+                            </a>
+                            <figcaption>Mapbox PM begins presentation</figcaption>
+                        </figure>
+                        <figure class="galleryportrait">
+                            <a href="mapbox2.JPG" target="_blank" rel="noopener">
+                                <img src="mapbox2thumb.jpg" alt="Visualization demo">
+                            </a>
+                            <figcaption>Mapbox visualization</figcaption>
+                        </figure>
+                        <figure class="galleryportrait">
+                            <a href="mapbox3.JPG" target="_blank" rel="noopener">
+                                <img src="mapbox3thumb.jpg" alt="Vision SDK demo">
+                            </a>
+                            <figcaption>Mapbox Vision SDK demo</figcaption>
+                        </figure>
+                        <figure class="galleryportrait">
+                            <a href="cruisecoding.JPG" target="_blank" rel="noopener">
+                                <img src="cruisecodingthumb.jpg" alt="Live coding">
+                            </a>
+                            <figcaption>Cruise live coding</figcaption>
+                        </figure>
+                        <figure class="galleryportrait">
+                            <a href="cruisewebviz.JPG" target="_blank" rel="noopener">
+                                <img src="cruisewebvizthumb.jpg" alt="Webviz demo">
+                            </a>
+                            <figcaption>Cruise Webviz demo</figcaption>
+                        </figure>
+                    </section>
+                </article>
+            </main>
+        </div>
+    </body>
+</html>
