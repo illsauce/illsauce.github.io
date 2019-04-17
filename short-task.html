@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Ilario Huober
+     Short Task
+     Document modified 4/16
+-->
+<html lang="en">
+<head>
+    <title>Two Columns Using Grid</title>
+    <meta name="description" content="Short task for the CNIT-132 class">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #a256ef;
+        }
+        #wrapper {
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-gap: 15px;
+            width: 80%;
+            min-width: 860px;
+            margin: 25px auto;
+            font-family: 'Lora', serif;
+        }
+        
+        .grid-area {
+            background-color: var(--bg-color, cornsilk);
+            color: var(--font-color, black);
+        }
+        
+        header.grid-area {
+            grid-area: 1 / 1 / 2 / 3;
+            text-align: center;
+        }
+        
+        nav.grid-area {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        
+        main.grid-area {
+            grid-area: 2 / 2 / 3 / 3;
+            padding: 15px;
+        }
+        
+        footer.grid-area {
+            grid-area: 3 / 1 / 4 / 3;
+            text-align: center;
+        }
+        
+        .grid-area.blue-text {
+            --font-color: blue;
+            --bg-color: #f4c5f7;
+        }
+        
+        .grid-area.maroon-text {
+            --font-color: maroon;
+            --bg-color: white;
+        }
+        
+        nav ul {
+            margin: 10px auto;
+        }
+        
+        nav ul li {
+            list-style-type: none;
+            height: 30px;
+            line-height: 30px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div id="wrapper">
+        <header class="grid-area blue-text">
+            <h1>Ilario's Pizza and Pasta</h1>
+        </header>
+        
+        <nav class="grid-area maroon-text">
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Hours &amp; Location</li>
+                <li>Reviews</li>
+            </ul>
+        </nav>
+        
+        <main class="grid-area maroon-text">
+            <h2>Our Story</h2>
+            <p>Over three decades ago, we built our restaurant on a simple dream: to bring delicious pizza and pasta to the masses. Cheese, pepperoni, olives, mushrooms, you name it. If it goes on a pizza, we have it inside our four walls.</p>
+            <p>That is, except pineapple. Even today, with young people's baffling obsession for fruit on pizza, we still refuse the right to serve anybody a Hawaiian pizza. And we're just getting out in front of this one: it doesn't exist yet, but if you ask for a plate of Hawaiian pasta, you will kindly be asked to leave the restaurant and not come back for a probationary period of two years, during which time you should think long and hard about the choices that led you to this point and whether you'd like to walk back through that door. If the answer is yes, then the word "Hawaiian" plus either "pizza" or "pasta" should be completely removed from your vocabulary.</p>
+        </main>
+        
+        <footer class="grid-area blue-text">
+            <p>Copyright &copy; 1986 illsauce Enterprises</p>
+        </footer>
+    </div>
+</body>
+</html>
